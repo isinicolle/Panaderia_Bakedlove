@@ -1,0 +1,10 @@
+#body {
+  background: url("../../assets/img/bg..png") no-repeat;
+  background-size: cover;
+}
+
+.bg-gradient-primary {
+  background: url("../../assets/img/bg..png") no-repeat;
+  background-size: cover;
+}
+
