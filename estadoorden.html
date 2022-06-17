@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Projects - Brand</title>
+    <title>Shopping Cart - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v1/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -30,7 +30,7 @@
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item"><a class="nav-link" data-bss-hover-animate="pulse" href="index.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Inicio</a></li>
                     <li class="nav-item" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="nosotros.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Nosotros</a></li>
-                    <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link active" data-bss-hover-animate="pulse" href="perfil.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Perfil</a></li>
+                    <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="perfil.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Perfil</a></li>
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="productos.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Productos</a></li>
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"></li>
                     <li class="nav-item d-flex flex-row" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="carritodecompra.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Facturación</a></li>
@@ -38,71 +38,16 @@
             </div>
         </div>
     </nav>
-    <header class="bg-primary-gradient pt-5">
-        <div class="container pt-4 pt-xl-5">
-            <div class="row pt-5">
-                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
-                    <div class="text-center">
-                        <h1 class="fw-bold" style="font-family: Acme, sans-serif;">Perfil de usuario</h1>
-                    </div>
+    <section class="py-5 mt-5">
+        <div class="container py-5">
+            <div class="row mx-auto" style="/*max-width: 700px;*/">
+                <div class="col">
+                    <div data-reflow-type="order-status" style="background: rgba(78,93,120,0.06);"></div>
+                    <div data-reflow-type="Order Status Page"></div>
                 </div>
             </div>
         </div>
-    </header>
-    <div class="container profile profile-view" id="profile">
-        <div class="row">
-            <div class="col-md-12 alert-col relative">
-                <div class="alert alert-info alert-dismissible absolue center" role="alert"><button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button><span>Profile save with success</span></div>
-            </div>
-        </div>
-        <form>
-            <div class="row profile-row">
-                <div class="col-md-4 relative">
-                    <div class="avatar">
-                        <div class="avatar-bg center"></div>
-                    </div><input class="form-control form-control" type="file" name="avatar-file">
-                </div>
-                <div class="col-md-8">
-                    <h1 style="font-family: 'Alegreya SC', serif;">Perfil&nbsp;<img class="img-fluid" id="logo-footer-1" src="assets/img/logo_panaderia%20(300 × 300 px).png" style="width: 38px;height: 38px;"></h1>
-                    <hr>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Nombre</label><input class="form-control" type="text" name="firstname"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Apellido</label><input class="form-control" type="text" name="lastname"></div>
-                        </div>
-                    </div>
-                    <div class="form-group mb-3"><label class="form-label">Correo</label><input class="form-control" type="email" autocomplete="off" required="" name="email"></div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Contraseña</label><input class="form-control" type="password" name="password" autocomplete="off" required=""></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Confirmar Contraseña</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required=""></div>
-                        </div>
-                    </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-12 content-right"><button class="btn btn-primary form-btn" type="submit" data-bs-target="#guardarconfiguracionperfil" data-bs-toggle="modal">Guardar</button><button class="btn btn-danger form-btn" type="reset">Cancelar</button></div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-    <div class="modal fade" role="dialog" tabindex="-1" id="guardarconfiguracionperfil">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Guardar cambios.</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>¿Esta seguro de guardar los cambios hechos en su perfil?</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button><button class="btn btn-primary" id="guardardefinitivo" type="submit">Guardar</button></div>
-            </div>
-        </div>
-    </div>
+    </section>
     <footer>
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
