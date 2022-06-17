@@ -1,4 +1,3 @@
-# Panaderia_Bakedlove
-Panadería Bakedlove 
+##  [Panaderia Bakedlove](https://isiszapata2001.github.io/)
 
-## El avance de este proyecto lo estare publicando aqui: [Panaderia Bakedlove](https://isiszapata2001.github.io/)
+Enlace del sitio web arriba , para visualizar los avances que se vayan teniendo. 
