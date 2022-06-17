@@ -18,3 +18,7 @@ section {
   background: rgba(0,180,201,0.27);
 }
 
+#ubicacion {
+  background-color: var(--bs-gray-100);
+}
+
