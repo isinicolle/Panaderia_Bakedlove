@@ -9,5 +9,5 @@ Elaborado frontend:
 Backend: 
 -Node.js
 
-DatabaseÑ
+Database:
 -Mysql(Azure)
