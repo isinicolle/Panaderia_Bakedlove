@@ -34,15 +34,28 @@
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="productos.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Productos</a></li>
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"></li>
                     <li class="nav-item d-flex flex-row" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="carritodecompra.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Facturación</a></li>
-                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right"><i class="typcn typcn-shopping-cart"></i></span><a class="btn btn-primary shadow" role="button" href="login.html">Logout</a>
+                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right"><i class="typcn typcn-shopping-cart"></i></span><button class="btn btn-primary shadow" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Logout</button>
             </div>
         </div>
     </nav>
-    <section class="py-5 mt-5"><a class="btn btn-primary shadow" role="button" href="productos.html">Regresar</a>
+    <section class="py-5 mt-5"><button class="btn btn-primary shadow" type="button">Regresar</button>
         <div class="container py-5">
             <div data-reflow-type="product" data-bss-dynamic-product="" data-bss-dynamic-product-param="product" data-reflow-shoppingcart-url="carritodecompra.html"></div>
         </div>
     </section>
+    <div class="modal fade" role="dialog" tabindex="-1" id="modalregresar">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Regresar a productos</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>¿Esta seguro que desea regresar al listado de los demás productos?&nbsp;</p>
+                </div>
+                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancelar</button><a class="btn btn-primary" role="button" href="productos.html">Aceptar</a></div>
+            </div>
+        </div>
+    </div>
     <footer>
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
