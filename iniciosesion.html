@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Forgotten Password - Brand</title>
+    <title>Login - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
@@ -23,39 +23,31 @@
 </head>
 
 <body class="bg-gradient-primary">
-    <div class="container">
+    <div class="container" style="box-shadow: 0px 0px;">
         <div class="row justify-content-center">
             <div class="col-md-9 col-lg-12 col-xl-10">
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
-                        <div class="row">
-                            <div class="col-lg-6 d-none d-lg-flex"><img class="img-fluid" src="assets/img/anuncio3.gif"></div>
+                        <div class="row" style="box-shadow: 0px 0px;">
+                            <div class="col-lg-6 d-none d-lg-flex" style="box-shadow: 0px 0px;"><img class="img-fluid" src="assets/img/anuncio1.gif"></div>
                             <div class="col-lg-6">
                                 <div class="p-5">
                                     <div class="text-center"><img class="img-fluid" src="assets/img/logo_panaderia.png" style="width: 150PX;">
-                                        <h4 class="text-dark mb-2" data-bss-hover-animate="pulse" style="font-family: Acme, sans-serif;">¿Haz olvidado tu clave?</h4>
-                                        <p data-bss-hover-animate="pulse" class="mb-4">Lo entendemos, estas cosa pasan. ¡Simplemente ingrese su dirección de correo electrónico a continuación para restablecer su contraseña!</p>
+                                        <h4 class="text-dark rubberBand animated mb-4" style="font-family: Akronim, serif;font-size: 37px;">Inicio de sesión</h4>
                                     </div>
                                     <form class="user">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="InputEmailRecovery" aria-describedby="EmailRecovery" placeholder="Escribe tu correo electronico" name="email" required="" style="font-family: Acme, sans-serif;"></div><button class="btn btn-primary d-block btn-user w-100" type="submit" style="font-family: Acme, sans-serif;" data-bs-target="#modal-1" data-bs-toggle="modal">Recuperar mi contraseña</button>
-                                        <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h4 class="modal-title">Recuperación de clave</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Revise su correo electrónico , se ha enviado con éxito para la recuperación de su clave.&nbsp;</p>
-                                                    </div>
-                                                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
-                                                </div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="InputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address..." name="email" required="" style="font-family: Acme, sans-serif;"></div>
+                                        <div class="mb-3"><input class="form-control form-control-user" type="password" id="InputPassword" placeholder="Password" name="password" required="" style="font-family: Acme, sans-serif;"></div>
+                                        <div class="mb-3">
+                                            <div class="custom-control custom-checkbox small">
+                                                <div class="form-check" style="font-family: Acme, sans-serif;"><input class="form-check-input custom-control-input" type="checkbox" id="formCheck-1"><label class="form-check-label custom-control-label" for="formCheck-1">Recordarme</label></div>
                                             </div>
-                                        </div>
+                                        </div><a class="btn btn-primary d-block btn-user w-100" role="button" style="font-family: Acme, sans-serif;" href="index.html">Entrar</a>
+                                        <hr>
                                     </form>
-                                    <div class="text-center">
-                                        <hr><a class="small" href="creaciondecuenta.html" style="font-family: Acme, sans-serif;">Crear nueva cuenta</a>
-                                    </div>
-                                    <div class="text-center"><a class="small" href="iniciosesion.html" style="font-family: Acme, sans-serif;">Regresar al inicio de sesión</a></div>
+                                    <div class="text-center"><a class="small" href="recuperarclave.html" style="font-family: Acme, sans-serif;">Olvide mi clave</a></div>
+                                    <div class="text-center"><a class="small" href="creaciondecuenta.html" style="font-family: Acme, sans-serif;">Crear cuenta nueva</a></div>
+                                    <div class="text-center" style="margin: 13px;padding: 3px;"><a class="small" href="creaciondecuenta.html" style="font-family: Acme, sans-serif;"><strong>ACCESO ADMINISTRATIVO</strong></a></div>
                                 </div>
                             </div>
                         </div>
