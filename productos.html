@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./assets/img/logo_panaderia (300 × 300 px).png">
-    <title>Productos</title>
+    <title>Products - Brand</title>
+    <meta name="description" content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v1/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -24,8 +29,8 @@
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: rgb(255,255,255);">
+<body style="font-family: 'Alegreya SC', serif;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: rgba(244,178,123,0.13);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><img class="img-fluid" src="assets/img/logo_panaderia%20(300 × 300 px).png"></span><span style="font-family: 'Alegreya SC', serif;color: var(--bs-gray);">Panadería Bakedlove</span></a><button data-bs-toggle="collapse" class="navbar-toggler visible" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav mx-auto">
@@ -35,7 +40,7 @@
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link active" data-bss-hover-animate="pulse" href="productos.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Productos</a></li>
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"></li>
                     <li class="nav-item d-flex flex-row" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="carritodecompra.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Facturación</a></li>
-                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right" data-reflow-shoppingcart-url="carritodecompra.html"><i class="typcn typcn-shopping-cart"></i></span><button class="btn btn-primary shadow" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Logout</button>
+                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right" data-reflow-shoppingcart-url="carritodecompra.html"><i class="typcn typcn-shopping-cart"></i></span><button class="btn btn-dark shadow" type="button" data-bs-target="#modalcerrarsesion" data-bs-toggle="modal">Salir</button>
             </div>
         </div>
     </nav>
@@ -49,9 +54,9 @@
             </div>
             <div class="row mx-auto" style="/*max-width: 700px;*/">
                 <div class="col">
-                    <div id="busquedaproductos" data-reflow-type="product-search" data-reflow-show-button="true" data-reflow-button-text="Buscar" data-reflow-placeholder="Búsqueda de productos">
+                    <div class="border rounded" id="busquedaproductos" data-reflow-type="product-search" data-reflow-show-button="true" data-reflow-button-text="Buscar" data-reflow-placeholder="Búsqueda de productos" style="background: rgba(253,126,20,0.08);">
                         <div id="reflow-product-search" class="reflow-product-search">
-                            <div id="ref-input-wrapper" class="ref-input-wrapper"><input type="text" class="ref-search" inputmode="search" placeholder="Busqueda de productos"><span id="ref-cancel-search" class="ref-cancel-search">X</span></div>
+                            <div id="ref-input-wrapper" class="ref-input-wrapper"><input type="text" class="ref-search" inputmode="search" placeholder="Busqueda de productos" style="box-shadow: 0px 0px;"><span id="ref-cancel-search" class="ref-cancel-search">X</span></div>
                         </div>
                     </div>
                     <h1 class="text-center" style="font-family: Acme, sans-serif;">Panadería</h1>
@@ -62,24 +67,11 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">¿Estas seguro de cerrar sesión?&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <p>Esta acción cerrara la sesión del usuario activo redirigiéndolo al login nuevamente.&nbsp;</p>
-                </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancelar</button><a class="btn btn-primary" role="button" id="cerrarsesionmodal" href="iniciosesion.html">Cerrar Sesión</a></div>
-            </div>
-        </div>
-    </div>
-    <footer>
+    <footer style="font-family: 'Alegreya SC', serif;">
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
                 <h3 class="d-flex flex-row"><a class="d-flex flex-row" href="#"><img class="img-fluid" id="logo-footer" src="assets/img/logo_panaderia%20(300 × 300 px).png" style="width: 38px;height: 38px;">&nbsp;Panadería<span>Bakedlove</span></a></h3>
-                <p class="links"><a href="./assets/revista/Revista panaderia bakedlove.pdf">Ver revista</a></p>
+                <p class="links"><a href="https://isiszapata2001.github.io/assets/revista/Revista%20panaderia%20bakedlove.pdf">Ver revista</a></p>
                 <p class="company-name">Todos los derechos reservados © 2022</p>
             </div>
             <div class="col-sm-6 col-md-4 footer-contacts">
@@ -99,6 +91,19 @@
             </div>
         </div>
     </footer>
+    <div class="modal fade" role="dialog" tabindex="1" id="modalcerrarsesion" style="border-style: none;">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header" style="border-style: none;background: #fff0e3;">
+                    <h4 class="modal-title">¿Estas seguro de cerrar sesión?&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="border-style: none;background: #fff0e3;">
+                    <p>Esta acción cerrara la sesión del usuario activo redirigiéndolo al login nuevamente.&nbsp;</p>
+                </div>
+                <div class="modal-footer" style="border-style: none;background: #fff0e3;"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: #be4450;">Cancelar</button><a class="btn btn-dark" role="button" id="cerrarsesionmodal" href="iniciosesion.html">Cerrar Sesión</a></div>
+            </div>
+        </div>
+    </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="https://cdn.reflowhq.com/v1/toolkit.min.js" data-reflow-store="1293898206"></script>

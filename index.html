@@ -4,8 +4,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="shortcut icon" href="./assets/img/logo_panaderia (300 × 300 px).png">
-    <title>Inicio</title>
+    <title>Home - Brand</title>
+    <meta name="description" content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.reflowhq.com/v1/toolkit.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
@@ -24,8 +29,8 @@
     <link rel="stylesheet" href="assets/css/Profile-Edit-Form.css">
 </head>
 
-<body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;">
-    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: rgb(255,255,255);">
+<body style="/*background: url(&quot;design.jpg&quot;);*/background-position: 0 -60px;font-family: 'Alegreya SC', serif;">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top navbar-shrink py-3" id="mainNav" style="background: rgba(244,178,123,0.13);">
         <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-primary shadow d-flex justify-content-center align-items-center me-2 bs-icon"><img class="img-fluid" src="assets/img/logo_panaderia%20(300 × 300 px).png"></span><span style="font-family: 'Alegreya SC', serif;color: var(--bs-gray);">Panadería Bakedlove</span></a><button data-bs-toggle="collapse" class="navbar-toggler visible" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-2">
                 <ul class="navbar-nav mx-auto">
@@ -35,7 +40,7 @@
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="productos.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Productos</a></li>
                     <li class="nav-item" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"></li>
                     <li class="nav-item d-flex flex-row" data-bss-hover-animate="pulse" style="font-family: Cookie, serif;font-size: 23px;color: #000000;"><a class="nav-link" data-bss-hover-animate="pulse" href="carritodecompra.html" style="font-family: Cookie, serif;font-size: 23px;color: #000000;">Facturación</a></li>
-                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right" data-reflow-shoppingcart-url="carritodecompra.html"><i class="typcn typcn-shopping-cart"></i></span><button class="btn btn-primary shadow" type="button" data-bs-target="#modal-1" data-bs-toggle="modal">Logout</button>
+                </ul><span class="me-auto" data-reflow-type="view-cart" data-reflow-summary-type="dropdown" data-reflow-summary-position="right" data-reflow-shoppingcart-url="carritodecompra.html"><i class="typcn typcn-shopping-cart"></i></span><button class="btn btn-dark shadow" type="button" data-bs-target="#modalcerrarsesion" data-bs-toggle="modal">Salir</button>
             </div>
         </div>
     </nav>
@@ -44,7 +49,6 @@
             <div class="row pt-5">
                 <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                     <div class="text-center">
-                        <p class="fw-bold text-success mb-2">La panadería favorita de nuestro país&nbsp;</p>
                         <h1 class="flash animated" style="font-family: Acme, sans-serif;">La delicia de nuestra panadería no se compara con ninguna</h1>
                     </div>
                 </div>
@@ -62,7 +66,7 @@
         <div class="container bg-primary-gradient py-5">
             <div class="row">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Nuestros servicios</p>
+                    <p class="fw-bold text-success mb-2"><span style="color: rgb(183, 99, 0);">Nuestros servicios</span></p>
                     <h3 class="fw-bold">¿Qué ofrecemos?</h3>
                 </div>
             </div>
@@ -71,41 +75,41 @@
                     <div class="col mb-5">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><i class="typcn typcn-thumbs-ok"></i></div>
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><i class="typcn typcn-thumbs-ok" style="color: var(--bs-orange);"></i></div>
                                 <h5 class="fw-bold card-title">Panadería</h5>
-                                <p class="text-muted card-text mb-4">¡Si eres #FanDelPan estás en el lugar indicado! Horneamos nuestro pan todos los días, muy tempranito, para que disfrutes pura frescura y calidad.</p><a class="btn btn-primary shadow" role="button" href="productos.html">Ver</a>
+                                <p class="text-muted card-text mb-4">¡Si eres #FanDelPan estás en el lugar indicado! Horneamos nuestro pan todos los días, muy tempranito, para que disfrutes pura frescura y calidad.</p><a class="btn btn-primary shadow" role="button" href="productos.html" style="background: linear-gradient(#af511f, #efbe77);border-style: none;">Ver</a>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-5">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><i class="typcn typcn-tick-outline"></i></div>
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><i class="typcn typcn-tick-outline" style="color: var(--bs-orange);"></i></div>
                                 <h5 class="fw-bold card-title">Repostería</h5>
-                                <p class="text-muted card-text mb-4">¡No existe nada más rico que deleitarte con nuestra deliciosa repostería, que al estar frente a la vitrina querrás pedir de todo!</p><a class="btn btn-primary shadow" role="button" href="productos.html">Ver</a>
+                                <p class="text-muted card-text mb-4">¡No existe nada más rico que deleitarte con nuestra deliciosa repostería, que al estar frente a la vitrina querrás pedir de todo!</p><a class="btn btn-primary shadow" role="button" href="productos.html" style="background: linear-gradient(#af511f, #efbe77);border-style: none;">Ver</a>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-emoji-wink">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-emoji-wink" style="color: var(--bs-orange);">
                                         <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
                                         <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm1.757-.437a.5.5 0 0 1 .68.194.934.934 0 0 0 .813.493c.339 0 .645-.19.813-.493a.5.5 0 1 1 .874.486A1.934 1.934 0 0 1 10.25 7.75c-.73 0-1.356-.412-1.687-1.007a.5.5 0 0 1 .194-.68z"></path>
                                     </svg></div>
                                 <h5 class="fw-bold card-title">Donas</h5>
-                                <p class="text-muted card-text mb-4">¡Nosotros las llamamos círculos explosivos de sabor y alegría, te encantarán! tenemos desde donas rellenas hasta en su representación común.&nbsp;</p><a class="btn btn-primary shadow" role="button" href="productos.html">Ver</a>
+                                <p class="text-muted card-text mb-4">¡Nosotros las llamamos círculos explosivos de sabor y alegría, te encantarán! tenemos desde donas rellenas hasta en su representación común.&nbsp;</p><a class="btn btn-primary shadow" role="button" href="productos.html" style="background: linear-gradient(#af511f, #efbe77);border-style: none;">Ver</a>
                             </div>
                         </div>
                     </div>
                     <div class="col mb-4">
                         <div class="card shadow-sm">
                             <div class="card-body px-4 py-5 px-md-5">
-                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-all">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check-all" style="color: var(--bs-orange);">
                                         <path d="M8.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L2.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093L8.95 4.992a.252.252 0 0 1 .02-.022zm-.92 5.14.92.92a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 1 0-1.091-1.028L9.477 9.417l-.485-.486-.943 1.179z"></path>
                                     </svg></div>
                                 <h5 class="fw-bold card-title">Pastelería</h5>
-                                <p class="text-muted card-text mb-4">Celebra tu vida con nosotros con el irresistible sabor y variados diseños de nuestros pasteles. Ya sean tradicionales o helados, comparte con familia o amigo</p><a class="btn btn-primary shadow" role="button" href="productos.html">Ver</a>
+                                <p class="text-muted card-text mb-4">Celebra tu vida con nosotros con el irresistible sabor y variados diseños de nuestros pasteles. Ya sean tradicionales o helados, comparte con familia o amigo</p><a class="btn btn-primary shadow" role="button" href="productos.html" style="background: linear-gradient(#af511f, #efbe77);border-style: none;">Ver</a>
                             </div>
                         </div>
                     </div>
@@ -131,7 +135,7 @@
         <div class="container py-5">
             <div class="row mb-5">
                 <div class="col-md-8 col-xl-6 text-center mx-auto">
-                    <p class="fw-bold text-success mb-2">Testimonios</p>
+                    <p class="fw-bold text-success mb-2"><span style="color: rgb(194, 129, 69);">Testimonios</span></p>
                     <h2 class="fw-bold">¿Que dice las personas sobre nosotros?</h2>
                     <p class="text-muted w-lg-50">No te dejes influenciar por lo que nosotros decimos , mira que nuestros mismos clientes te cuenten su experiencia con nuestros productos.&nbsp;</p>
                 </div>
@@ -142,7 +146,7 @@
                         <p class="bg-light border rounded border-light p-4">Soy vegano y desde que conocí esta panadería me ha impresionado su variedad e productos y que sean accesibles al momento del pedido del producto. </p>
                         <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar2.jpg">
                             <div>
-                                <p class="fw-bold text-primary mb-0">Mario Sandoval</p>
+                                <p class="fw-bold text-primary mb-0"><span style="color: rgb(167, 102, 45);">Mario Sandoval</span></p>
                                 <p class="text-muted mb-0">Cliente</p>
                             </div>
                         </div>
@@ -153,7 +157,7 @@
                         <p class="bg-light border rounded border-light p-4">Su panadería es simplemente deliciosa , hace mucho tiempo que no se veía un negocio que sea bueno , bonito y barato.&nbsp;</p>
                         <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar4.jpg">
                             <div>
-                                <p class="fw-bold text-primary mb-0">John Smith</p>
+                                <p class="fw-bold text-primary mb-0"><span style="color: rgb(167, 102, 45);">John Smith</span></p>
                                 <p class="text-muted mb-0">Cliente</p>
                             </div>
                         </div>
@@ -164,7 +168,7 @@
                         <p class="bg-light border rounded border-light p-4">Como soy una persona diabética , me alegra que en su menú este la opción de personas como nosotros para no dejar los postres que amamos , pero siempre comiéndolos de manera saludable.</p>
                         <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="assets/img/team/avatar5.jpg">
                             <div>
-                                <p class="fw-bold text-primary mb-0">Carla Thompson</p>
+                                <p class="fw-bold text-primary mb-0"><span style="color: rgb(167, 102, 45);">Carla Thompson</span></p>
                                 <p class="text-muted mb-0">Cliente</p>
                             </div>
                         </div>
@@ -173,24 +177,24 @@
             </div>
         </div>
     </section>
-    <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+    <div class="modal fade" role="dialog" tabindex="1" id="modalcerrarsesion" style="border-style: none;">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
+                <div class="modal-header" style="border-style: none;background: #fff0e3;">
                     <h4 class="modal-title">¿Estas seguro de cerrar sesión?&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
+                <div class="modal-body" style="border-style: none;background: #fff0e3;">
                     <p>Esta acción cerrara la sesión del usuario activo redirigiéndolo al login nuevamente.&nbsp;</p>
                 </div>
-                <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancelar</button><a class="btn btn-primary" role="button" id="cerrarsesionmodal" href="iniciosesion.html">Cerrar Sesión</a></div>
+                <div class="modal-footer" style="border-style: none;background: #fff0e3;"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: #be4450;">Cancelar</button><a class="btn btn-dark" role="button" id="cerrarsesionmodal" href="iniciosesion.html">Cerrar Sesión</a></div>
             </div>
         </div>
     </div>
-    <footer>
+    <footer style="font-family: 'Alegreya SC', serif;">
         <div class="row">
             <div class="col-sm-6 col-md-4 footer-navigation">
                 <h3 class="d-flex flex-row"><a class="d-flex flex-row" href="#"><img class="img-fluid" id="logo-footer" src="assets/img/logo_panaderia%20(300 × 300 px).png" style="width: 38px;height: 38px;">&nbsp;Panadería<span>Bakedlove</span></a></h3>
-                <p class="links"><a href="./assets/revista/Revista panaderia bakedlove.pdf">Ver revista</a></p>
+                <p class="links"><a href="https://isiszapata2001.github.io/assets/revista/Revista%20panaderia%20bakedlove.pdf">Ver revista</a></p>
                 <p class="company-name">Todos los derechos reservados © 2022</p>
             </div>
             <div class="col-sm-6 col-md-4 footer-contacts">
