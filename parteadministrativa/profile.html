@@ -3,70 +3,83 @@
 
 <head>
     <meta charset="utf-8">
-<script
-src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-<!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
-<link rel="stylesheet"
-href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-<script
-src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-<script 
-src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script 
-src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
 
 
-<!-- DATA TABLE--> 
-<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/>	
-<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
-<script type="text/javascript">
-$(document).ready(function() {
-   //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
-   $('#userList').DataTable();
-} );
-</script>
+    <!-- DATA TABLE-->
+    <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+            $('#userList').DataTable();
+        });
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Profile - Brand</title>
-    <meta name="description" content="Esta es la parte administrativa del proyecto de Negocios Web. Utilizando como backend Node.js y Mysql. MVC con handlebars.js">
+    <title>Perfil | Administrativo</title>
+    <meta name="description"
+        content="Esta es la parte administrativa del proyecto de Negocios Web. Utilizando como backend Node.js y Mysql. MVC con handlebars.js">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 </head>
 
 <body id="page-top" style="font-family: 'Alegreya SC', serif;">
     <div id="wrapper">
-        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: linear-gradient(#813c0b, #664834), rgba(255,107,0,0.76);">
-            <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
+        <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0"
+            style="background: linear-gradient(#813c0b, #664834), rgba(255,107,0,0.76);">
+            <div class="container-fluid d-flex flex-column p-0"><a
+                    class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
                     <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-bread-slice"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>Admin</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i class="fas fa-user"></i><span>Perfil</span></a></li>
+                    <li class="nav-item"><a class="nav-link active" href="profile.html"><i
+                                class="fas fa-user"></i><span>Perfil</span></a></li>
                     <li class="nav-item"></li>
-                    <li class="nav-item"><a class="nav-link" href="clientes.html"><i class="fas fa-table"></i><span>Usuarios clientes</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="administrativo.html"><i class="fas fa-table"></i><span>Administrativo</span></a></li>
-                    <li class="nav-item"><a class="nav-link" href="usuarios-administrativos.html"><i class="fas fa-table"></i><span>Usuarios administrativos</span></a></li>
-                </ul><button class="btn btn-dark" type="button" data-bs-target="#modalsaliradmin" data-bs-toggle="modal" style="border-style: none;">Cerrar sesión&nbsp;</button>
+                    <li class="nav-item"><a class="nav-link" href="clientes.html"><i
+                                class="fas fa-table"></i><span>Usuarios clientes</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="administrativo.html"><i
+                                class="fas fa-table"></i><span>Administrativo</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="usuarios-administrativos.html"><i
+                                class="fas fa-table"></i><span>Usuarios administrativos</span></a></li>
+                </ul><button class="btn btn-dark" type="button" data-bs-target="#modalsaliradmin" data-bs-toggle="modal"
+                    style="border-style: none;">Cerrar sesión&nbsp;</button>
                 <div class="modal fade" role="dialog" tabindex="1" id="modalsaliradmin">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
                             <div class="modal-header" style="border-style: none;">
-                                <h4 class="modal-title">¿Esta seguro de cerrar sesión?&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h4 class="modal-title">¿Esta seguro de cerrar sesión?&nbsp;</h4><button type="button"
+                                    class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body" style="border-style: none;">
                                 <p>Se cerrara la sesión del usuario.&nbsp;</p>
                             </div>
-                            <div class="modal-footer" style="border-style: none;"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: #803831;color: rgb(255,255,255);">Cancelar</button><a class="btn btn-primary" role="button" href="login.html" style="background: rgb(66,98,14);">Aceptar</a></div>
+                            <div class="modal-footer" style="border-style: none;"><button class="btn btn-light"
+                                    type="button" data-bs-dismiss="modal"
+                                    style="background: #803831;color: rgb(255,255,255);">Cancelar</button><a
+                                    class="btn btn-primary" role="button" href="login.html"
+                                    style="background: rgb(66,98,14);">Aceptar</a></div>
                         </div>
                     </div>
                 </div>
@@ -76,16 +89,29 @@ $(document).ready(function() {
         <div class="d-flex flex-column" id="content-wrapper">
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white shadow mb-4 topbar static-top">
-                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                    <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle me-3"
+                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <ul class="navbar-nav flex-nowrap ms-auto">
                             <li class="nav-item dropdown no-arrow mx-1">
-                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end" aria-labelledby="alertsDropdown"></div>
+                                <div class="shadow dropdown-list dropdown-menu dropdown-menu-end"
+                                    aria-labelledby="alertsDropdown"></div>
                             </li>
                             <div class="d-none d-sm-block topbar-divider"></div>
                             <li class="nav-item dropdown no-arrow">
-                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><span class="d-none d-lg-inline me-2 text-gray-600 small">Usuario Activo</span></a>
-                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity log</a>
-                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
+                                <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
+                                        aria-expanded="false" data-bs-toggle="dropdown" href="#"><span
+                                            class="d-none d-lg-inline me-2 text-gray-600 small">Usuario
+                                            Activo</span></a>
+                                    <div class="dropdown-menu shadow dropdown-menu-end animated--grow-in"><a
+                                            class="dropdown-item" href="#"><i
+                                                class="fas fa-user fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Profile</a><a
+                                            class="dropdown-item" href="#"><i
+                                                class="fas fa-cogs fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Settings</a><a
+                                            class="dropdown-item" href="#"><i
+                                                class="fas fa-list fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Activity
+                                            log</a>
+                                        <div class="dropdown-divider"></div><a class="dropdown-item" href="#"><i
+                                                class="fas fa-sign-out-alt fa-sm fa-fw me-2 text-gray-400"></i>&nbsp;Logout</a>
                                     </div>
                                 </div>
                             </li>
@@ -97,8 +123,10 @@ $(document).ready(function() {
                     <div class="row mb-3">
                         <div class="col-lg-4">
                             <div class="card mb-3">
-                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4" src="assets/img/dogs/image2.jpeg" width="160" height="160">
-                                    <div class="mb-3"><button class="btn btn-dark btn-sm" type="button">Cambiar imagen</button></div>
+                                <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4"
+                                        src="assets/img/dogs/image2.jpeg" width="160" height="160">
+                                    <div class="mb-3"><button class="btn btn-dark btn-sm" type="button">Cambiar
+                                            imagen</button></div>
                                 </div>
                             </div>
                             <div class="card shadow mb-4"></div>
@@ -115,7 +143,8 @@ $(document).ready(function() {
                                                 </div>
                                                 <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
                                             </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5%
+                                                since last month</p>
                                         </div>
                                     </div>
                                 </div>
@@ -129,7 +158,8 @@ $(document).ready(function() {
                                                 </div>
                                                 <div class="col-auto"><i class="fas fa-rocket fa-2x"></i></div>
                                             </div>
-                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5% since last month</p>
+                                            <p class="text-white-50 small m-0"><i class="fas fa-arrow-up"></i>&nbsp;5%
+                                                since last month</p>
                                         </div>
                                     </div>
                                 </div>
@@ -141,24 +171,51 @@ $(document).ready(function() {
                                             <p class="m-0 fw-bold">Configuración de usuario</p>
                                         </div>
                                         <div class="card-body">
-                                            <form>
+                                            <form class="form needs-validation" novalidate role="form"
+                                                action="./clientes.html">
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="username"><strong>Username</strong></label><input class="form-control" type="text" id="username" placeholder="user.name" name="username"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="username"><strong>Username</strong></label><input
+                                                                class="form-control" type="text" id="username"
+                                                                placeholder="user.name" name="username" required>
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="email"><strong>Email Address</strong></label><input class="form-control" type="email" id="email" placeholder="user@example.com" name="email"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="email"><strong>Email Address</strong></label><input
+                                                                class="form-control" type="email" id="email"
+                                                                placeholder="user@example.com" name="email" required>
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="first_name"><strong>First Name</strong></label><input class="form-control" type="text" id="first_name" placeholder="John" name="first_name"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="first_name"><strong>First
+                                                                    Name</strong></label><input class="form-control"
+                                                                type="text" id="first_name" placeholder="John"
+                                                                name="first_name" required>
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="last_name"><strong>Last Name</strong></label><input class="form-control" type="text" id="last_name" placeholder="Doe" name="last_name"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="last_name"><strong>Last Name</strong></label><input
+                                                                class="form-control" type="text" id="last_name"
+                                                                placeholder="Doe" name="last_name" required>
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-3"><button class="btn btn-dark btn-sm" type="submit">Actualizar</button></div>
+                                                <div class="mb-3"><button class="btn btn-dark btn-sm" type="submit"
+                                                        role="button">Actualizar</button></div>
                                             </form>
                                         </div>
                                     </div>
@@ -167,17 +224,37 @@ $(document).ready(function() {
                                             <p class="m-0 fw-bold">Configuración de contacto</p>
                                         </div>
                                         <div class="card-body">
-                                            <form>
-                                                <div class="mb-3"><label class="form-label" for="address"><strong>Address</strong></label><input class="form-control" type="text" id="address" placeholder="Sunset Blvd, 38" name="address"></div>
+                                            <form class="form needs-validation" novalidate role="form"
+                                                action="./profile.html">
+                                                <div class="mb-3"><label class="form-label"
+                                                        for="address"><strong>Address</strong></label><input
+                                                        class="form-control" type="text" id="address"
+                                                        placeholder="Sunset Blvd, 38" name="address" required="">
+                                                    <div class="valid-feedback">Correcto</div>
+                                                    <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                </div>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="city"><strong>City</strong></label><input class="form-control" type="text" id="city" placeholder="Los Angeles" name="city"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="city"><strong>City</strong></label><input
+                                                                class="form-control" type="text" id="city"
+                                                                placeholder="Los Angeles" name="city" required="">
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                     <div class="col">
-                                                        <div class="mb-3"><label class="form-label" for="country"><strong>Country</strong></label><input class="form-control" type="text" id="country" placeholder="USA" name="country"></div>
+                                                        <div class="mb-3"><label class="form-label"
+                                                                for="country"><strong>Country</strong></label><input
+                                                                class="form-control" type="text" id="country"
+                                                                placeholder="USA" name="country" required="">
+                                                            <div class="valid-feedback">Correcto</div>
+                                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                                <div class="mb-3"><button class="btn btn-dark btn-sm" type="submit">Save&nbsp;Settings</button></div>
+                                                <div class="mb-3"><button class="btn btn-dark btn-sm" type="submit"
+                                                        role="button">Save&nbsp;Settings</button></div>
                                             </form>
                                         </div>
                                     </div>
@@ -190,7 +267,8 @@ $(document).ready(function() {
             </div>
             <footer class="bg-white sticky-footer">
                 <div class="container my-auto">
-                    <div class="text-center my-auto copyright"><span>Todos los derechos reservados ©&nbsp; 2022</span></div>
+                    <div class="text-center my-auto copyright"><span>Todos los derechos reservados ©&nbsp; 2022</span>
+                    </div>
                 </div>
             </footer>
         </div>
@@ -198,6 +276,7 @@ $(document).ready(function() {
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bold-and-bright.js"></script>
     <script src="assets/js/theme.js"></script>
+    <script src="../assets/js/validacion.js"></script>
 </body>
 
 </html>
