@@ -3,6 +3,31 @@
 
 <head>
     <meta charset="utf-8">
+<script
+src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- FRAMEWORK BOOTSTRAP para el estilo de la pagina-->
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<script
+src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script 
+src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script 
+src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+
+<!-- DATA TABLE--> 
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.1/css/bootstrap.css"/>	
+<link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css"/>
+<script type="text/javascript">
+$(document).ready(function() {
+   //Asegurate que el id que le diste a la tabla sea igual al texto despues del simbolo #
+   $('#userList').DataTable();
+} );
+</script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Profile - Brand</title>
     <meta name="description" content="Esta es la parte administrativa del proyecto de Negocios Web. Utilizando como backend Node.js y Mysql. MVC con handlebars.js">
@@ -17,7 +42,7 @@
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
 </head>
 
-<body id="page-top">
+<body id="page-top" style="font-family: 'Alegreya SC', serif;">
     <div id="wrapper">
         <nav class="navbar navbar-dark align-items-start sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background: linear-gradient(#813c0b, #664834), rgba(255,107,0,0.76);">
             <div class="container-fluid d-flex flex-column p-0"><a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#">
@@ -31,17 +56,17 @@
                     <li class="nav-item"><a class="nav-link" href="clientes.html"><i class="fas fa-table"></i><span>Usuarios clientes</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="administrativo.html"><i class="fas fa-table"></i><span>Administrativo</span></a></li>
                     <li class="nav-item"><a class="nav-link" href="usuarios-administrativos.html"><i class="fas fa-table"></i><span>Usuarios administrativos</span></a></li>
-                </ul><button class="btn btn-dark" type="button" data-bs-target="#modal-1" data-bs-toggle="modal" style="border-style: none;">Cerrar sesión&nbsp;</button>
-                <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
+                </ul><button class="btn btn-dark" type="button" data-bs-target="#modalsaliradmin" data-bs-toggle="modal" style="border-style: none;">Cerrar sesión&nbsp;</button>
+                <div class="modal fade" role="dialog" tabindex="1" id="modalsaliradmin">
                     <div class="modal-dialog" role="document">
                         <div class="modal-content">
-                            <div class="modal-header">
+                            <div class="modal-header" style="border-style: none;">
                                 <h4 class="modal-title">¿Esta seguro de cerrar sesión?&nbsp;</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body" style="border-style: none;">
                                 <p>Se cerrara la sesión del usuario.&nbsp;</p>
                             </div>
-                            <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cancelar</button><a class="btn btn-primary" role="button" href="login.html">Aceptar</a></div>
+                            <div class="modal-footer" style="border-style: none;"><button class="btn btn-light" type="button" data-bs-dismiss="modal" style="background: #803831;color: rgb(255,255,255);">Cancelar</button><a class="btn btn-primary" role="button" href="login.html" style="background: rgb(66,98,14);">Aceptar</a></div>
                         </div>
                     </div>
                 </div>
