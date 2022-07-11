@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <url>
+        <loc>/cancel.html</loc>
+    </url>
+    <url>
+        <loc>/carritodecompra.html</loc>
+    </url>
+    <url>
+        <loc>/creaciondecuenta.html</loc>
+    </url>
+    <url>
+        <loc>/estadoorden.html</loc>
+    </url>
+    <url>
+        <loc>/</loc>
+    </url>
+    <url>
+        <loc>/iniciosesion.html</loc>
+    </url>
+    <url>
+        <loc>/nosotros.html</loc>
+    </url>
+    <url>
+        <loc>/perfil.html</loc>
+    </url>
+    <url>
+        <loc>/product.html</loc>
+    </url>
+    <url>
+        <loc>/productos.html</loc>
+    </url>
+    <url>
+        <loc>/recuperarclave.html</loc>
+    </url>
+    <url>
+        <loc>/success.html</loc>
+    </url>
+</urlset>
