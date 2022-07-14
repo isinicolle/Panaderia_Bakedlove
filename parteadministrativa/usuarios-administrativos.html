@@ -298,12 +298,12 @@
                       <div class="card-body">
 
                         <!-- Formulario de ingreso de usuario -->
-                        <form class="form needs-validation" id="form1" method="post" role="form" autocomplete="off"
+                        <form class="form needs-validation" id="formulario" method="post" role="form" autocomplete="off"
                           novalidate>
                           <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Nombres</label>
                             <div class="col-lg-9">
-                              <input class="form-control" type="text" required>
+                              <input class="form-control" type="text" required minlength="3" maxlength="50">
                               <div class="valid-feedback">Correcto</div>
                               <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -335,7 +335,8 @@
                           <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Correo electrónico</label>
                             <div class="col-lg-9">
-                              <input class="form-control" type="email" required>
+                              <input class="form-control" type="email" id="InputEmail" required minlength="5"
+                                maxlength="40">
                               <div class="valid-feedback">Correcto</div>
                               <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -343,7 +344,7 @@
                           <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Nombre de usuario</label>
                             <div class="col-lg-9">
-                              <input class="form-control" type="text" required>
+                              <input class="form-control" type="text" required minlength="5" maxlength="20">
                               <div class="valid-feedback">Correcto</div>
                               <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -351,7 +352,7 @@
                           <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Contraseña</label>
                             <div class="col-lg-9">
-                              <input class="form-control" type="password" required>
+                              <input class="form-control" type="password" required minlength="5" maxlength="15">
                               <div class="valid-feedback">Correcto</div>
                               <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -359,7 +360,7 @@
                           <div class="form-group row">
                             <label class="col-lg-3 col-form-label form-control-label">Confirmar contraseña</label>
                             <div class="col-lg-9">
-                              <input class="form-control" type="password" required>
+                              <input class="form-control" type="password" required minlength="5" maxlength="15">
                               <div class="valid-feedback">Correcto</div>
                               <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>

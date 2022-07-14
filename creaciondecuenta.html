@@ -44,37 +44,40 @@
                                     Creación de nueva cuenta</h4>
                             </div>
                             <form class="user form needs-validation" novalidate role="form" autocomplete="off"
-                                action="./index.html">
+                                action="./index.html" id="formulario">
                                 <div class="row mb-3">
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
                                             type="text" id="FirstName" placeholder="Nombre" name="first_name"
-                                            required="" style="font-family: Acme, sans-serif;">
+                                            required="" minLength="3" maxlength="20"
+                                            style="font-family: Acme, sans-serif;">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="text"
                                             id="exampleFirstName" placeholder="Apellido" name="last_name" required=""
-                                            style="font-family: Acme, sans-serif;">
+                                            style="font-family: Acme, sans-serif;" minLength="3" maxlength="20">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                 </div>
                                 <div class="mb-3"><input class="form-control form-control-user" type="email"
-                                        id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email"
-                                        name="email" required="" style="font-family: Acme, sans-serif;">
+                                        id="InputEmail" aria-describedby="emailHelp" placeholder="Email" name="email"
+                                        required="" style="font-family: Acme, sans-serif;" minlength="5" maxlength="40">
                                     <div class="valid-feedback">Correcto</div>
                                     <div class="invalid-feedback">Ingrese datos correctos</div>
                                 </div>
                                 <div class="row mb-3">
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
                                             type="password" id="examplePasswordInput" placeholder="Password"
-                                            name="password" required="" style="font-family: Acme, sans-serif;">
+                                            name="password" required="" style="font-family: Acme, sans-serif;"
+                                            minLength="5" maxlength="15">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="password"
                                             id="InputRepeatPassword" placeholder="Confirmar Password"
-                                            name="password_repeat" required="" style="font-family: Acme, sans-serif;">
+                                            name="password_repeat" required="" style="font-family: Acme, sans-serif;"
+                                            minLength="5" maxlength="15">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>

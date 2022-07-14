@@ -172,13 +172,14 @@
                                         </div>
                                         <div class="card-body">
                                             <form class="form needs-validation" novalidate role="form"
-                                                action="./clientes.html">
+                                                action="./clientes.html" id="formulario">
                                                 <div class="row">
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label"
                                                                 for="username"><strong>Username</strong></label><input
                                                                 class="form-control" type="text" id="username"
-                                                                placeholder="user.name" name="username" required>
+                                                                placeholder="user.name" name="username" required
+                                                                minLength="5" maxlength="20">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>
@@ -186,8 +187,9 @@
                                                     <div class="col">
                                                         <div class="mb-3"><label class="form-label"
                                                                 for="email"><strong>Email Address</strong></label><input
-                                                                class="form-control" type="email" id="email"
-                                                                placeholder="user@example.com" name="email" required>
+                                                                class="form-control" type="email" id="ImputEmail"
+                                                                placeholder="user@example.com" name="email" required
+                                                                minlength="5" maxlength="40">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>
@@ -199,7 +201,7 @@
                                                                 for="first_name"><strong>First
                                                                     Name</strong></label><input class="form-control"
                                                                 type="text" id="first_name" placeholder="John"
-                                                                name="first_name" required>
+                                                                name="first_name" required minLength="3" maxlength="20">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>
@@ -208,7 +210,8 @@
                                                         <div class="mb-3"><label class="form-label"
                                                                 for="last_name"><strong>Last Name</strong></label><input
                                                                 class="form-control" type="text" id="last_name"
-                                                                placeholder="Doe" name="last_name" required>
+                                                                placeholder="Doe" name="last_name" required
+                                                                minLength="3" maxlength="20">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>
@@ -229,7 +232,8 @@
                                                 <div class="mb-3"><label class="form-label"
                                                         for="address"><strong>Address</strong></label><input
                                                         class="form-control" type="text" id="address"
-                                                        placeholder="Sunset Blvd, 38" name="address" required="">
+                                                        placeholder="Sunset Blvd, 38" name="address" required=""
+                                                        minLength="5" maxlength="80">
                                                     <div class="valid-feedback">Correcto</div>
                                                     <div class="invalid-feedback">Ingrese datos correctos</div>
                                                 </div>
@@ -238,7 +242,8 @@
                                                         <div class="mb-3"><label class="form-label"
                                                                 for="city"><strong>City</strong></label><input
                                                                 class="form-control" type="text" id="city"
-                                                                placeholder="Los Angeles" name="city" required="">
+                                                                placeholder="Los Angeles" name="city" required=""
+                                                                minLength="5" maxlength="80">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>
@@ -247,7 +252,8 @@
                                                         <div class="mb-3"><label class="form-label"
                                                                 for="country"><strong>Country</strong></label><input
                                                                 class="form-control" type="text" id="country"
-                                                                placeholder="USA" name="country" required="">
+                                                                placeholder="USA" name="country" required=""
+                                                                minLength="4" maxlength="50">
                                                             <div class="valid-feedback">Correcto</div>
                                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                                         </div>

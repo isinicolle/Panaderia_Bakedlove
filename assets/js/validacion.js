@@ -15,3 +15,19 @@
     });
   }, false);
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  document.getElementById("formulario").addEventListener('submit', 'validarCorreo');
+});
+
+function validarCorreo(evento) {
+  evento.preventDefault();
+  var email = document.getElementById('InputEmail').value;
+  //validar correo electronico
+  let expresion = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  if (!expresion.test(email)) {
+    alert('El Correo Electronico no es valido');
+    return false;
+  }
+  this.submit();
+}

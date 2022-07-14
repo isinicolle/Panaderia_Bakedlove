@@ -89,7 +89,7 @@
                         success</span></div>
             </div>
         </div>
-        <form class="form needs-validation" novalidate role="form" autocomplete="off">
+        <form class="form needs-validation" novalidate role="form" autocomplete="off" id="formulario">
             <div class="row profile-row">
                 <div class="col-md-4 relative">
                     <div class="avatar">
@@ -103,21 +103,24 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Nombre</label>
-                                <input class="form-control" type="text" name="firstname" required="">
+                                <input class="form-control" type="text" name="firstname" required="" minLength="3"
+                                    maxlength="20">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
                         </div>
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Apellido</label><input
-                                    class="form-control" type="text" name="lastname" required="">
+                                    class="form-control" type="text" name="lastname" required="" minLength="3"
+                                    maxlength="20">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
                         </div>
                     </div>
                     <div class="form-group mb-3"><label class="form-label">Correo</label><input class="form-control"
-                            type="email" autocomplete="off" required="" name="email">
+                            type="email" autocomplete="off" id="InputEmail" required="" name="email" minLength="5"
+                            maxlength="40">
                         <div class="valid-feedback">Correcto</div>
                         <div class="invalid-feedback">Ingrese datos correctos</div>
                     </div>
@@ -125,7 +128,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Contraseña</label><input
                                     class="form-control" type="password" name="password" autocomplete="off" required=""
-                                    minLength="5">
+                                    minLength="5" maxlength="15">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -133,7 +136,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Confirmar Contraseña</label><input
                                     class="form-control" type="password" name="confirmpass" autocomplete="off"
-                                    required="" minLength="5">
+                                    required="" minLength="5" maxlength="15">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
