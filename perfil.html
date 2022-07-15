@@ -104,7 +104,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Nombre</label>
                                 <input class="form-control" type="text" name="firstname" required="" minLength="3"
-                                    maxlength="20">
+                                    maxlength="20" pattern="[A-Za-z\u00f1\u00d1]{3,20}">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -112,7 +112,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Apellido</label><input
                                     class="form-control" type="text" name="lastname" required="" minLength="3"
-                                    maxlength="20">
+                                    maxlength="20" pattern="[A-Za-z\u00f1\u00d1]{3,20}">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -120,7 +120,7 @@
                     </div>
                     <div class="form-group mb-3"><label class="form-label">Correo</label><input class="form-control"
                             type="email" autocomplete="off" id="InputEmail" required="" name="email" minLength="5"
-                            maxlength="40">
+                            maxlength="40" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
                         <div class="valid-feedback">Correcto</div>
                         <div class="invalid-feedback">Ingrese datos correctos</div>
                     </div>
@@ -128,7 +128,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Contraseña</label><input
                                     class="form-control" type="password" name="password" autocomplete="off" required=""
-                                    minLength="5" maxlength="15">
+                                    minLength="5" maxlength="15" pattern="[^\s]{5,15}">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>
@@ -136,7 +136,7 @@
                         <div class="col-sm-12 col-md-6">
                             <div class="form-group mb-3"><label class="form-label">Confirmar Contraseña</label><input
                                     class="form-control" type="password" name="confirmpass" autocomplete="off"
-                                    required="" minLength="5" maxlength="15">
+                                    required="" minLength="5" maxlength="15" pattern="[^\s]{5,15}">
                                 <div class="valid-feedback">Correcto</div>
                                 <div class="invalid-feedback">Ingrese datos correctos</div>
                             </div>

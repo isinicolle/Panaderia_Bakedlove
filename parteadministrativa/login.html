@@ -68,12 +68,14 @@
                             <form class="form needs-validation" id="formulario" method="post" autocomplete="off"
                                 novalidate role="form" action="./profile.html">
                                 <div class="mb-3"><input class="form-control" type="email" name="email" id="InputEmail"
-                                        placeholder="Email" required="" minlength="5" maxlength="40">
+                                        placeholder="Email" required="" minlength="5" maxlength="40"
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
                                     <div class="valid-feedback">Correcto</div>
                                     <div class="invalid-feedback">Ingrese datos correctos</div>
                                 </div>
                                 <div class="mb-3"><input class="form-control" type="password" name="password"
-                                        placeholder="Password" required="" minLength="5" maxlength="15">
+                                        placeholder="Password" required="" minLength="5" maxlength="15"
+                                        pattern="[^\s]{5,15}">
                                     <div class="valid-feedback">Correcto</div>
                                     <div class="invalid-feedback">Ingrese datos correctos</div>
                                 </div>

@@ -51,13 +51,15 @@
                                         <div class="mb-3"><input class="form-control form-control-user" type="email"
                                                 id="InputEmail" aria-describedby="emailHelp" minlength="5"
                                                 maxlength="40" placeholder="Enter Email Address..." name="email"
-                                                required="" style="font-family: Acme, sans-serif;">
+                                                required="" style="font-family: Acme, sans-serif;"
+                                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
                                             <div class="valid-feedback">Correcto</div>
                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                         </div>
                                         <div class="mb-3"><input class="form-control form-control-user" type="password"
                                                 id="InputPassword" placeholder="Password" name="password" required=""
-                                                style="font-family: Acme, sans-serif;" minLength="5" maxlength="15">
+                                                style="font-family: Acme, sans-serif;" minLength="5" maxlength="15"
+                                                pattern="[^\s]{5,15}">
                                             <div class="valid-feedback">Correcto</div>
                                             <div class="invalid-feedback">Ingrese datos correctos</div>
                                         </div>

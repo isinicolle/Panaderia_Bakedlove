@@ -49,20 +49,22 @@
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
                                             type="text" id="FirstName" placeholder="Nombre" name="first_name"
                                             required="" minLength="3" maxlength="20"
-                                            style="font-family: Acme, sans-serif;">
+                                            pattern="[A-Za-z\u00f1\u00d1]{3,20}" style="font-family: Acme, sans-serif;">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="text"
                                             id="exampleFirstName" placeholder="Apellido" name="last_name" required=""
-                                            style="font-family: Acme, sans-serif;" minLength="3" maxlength="20">
+                                            style="font-family: Acme, sans-serif;" minLength="3" maxlength="20"
+                                            pattern="[A-Za-z\u00f1\u00d1]{3,20}">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                 </div>
                                 <div class="mb-3"><input class="form-control form-control-user" type="email"
                                         id="InputEmail" aria-describedby="emailHelp" placeholder="Email" name="email"
-                                        required="" style="font-family: Acme, sans-serif;" minlength="5" maxlength="40">
+                                        required="" style="font-family: Acme, sans-serif;" minlength="5" maxlength="40"
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
                                     <div class="valid-feedback">Correcto</div>
                                     <div class="invalid-feedback">Ingrese datos correctos</div>
                                 </div>
@@ -70,14 +72,14 @@
                                     <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
                                             type="password" id="examplePasswordInput" placeholder="Password"
                                             name="password" required="" style="font-family: Acme, sans-serif;"
-                                            minLength="5" maxlength="15">
+                                            minLength="5" maxlength="15" pattern="[^\s]{5,15}">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
                                     <div class="col-sm-6"><input class="form-control form-control-user" type="password"
                                             id="InputRepeatPassword" placeholder="Confirmar Password"
                                             name="password_repeat" required="" style="font-family: Acme, sans-serif;"
-                                            minLength="5" maxlength="15">
+                                            minLength="5" maxlength="15" pattern="[^\s]{5,15}">
                                         <div class="valid-feedback">Correcto</div>
                                         <div class="invalid-feedback">Ingrese datos correctos</div>
                                     </div>
