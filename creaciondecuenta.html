@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Registro | Panadería Bakedlove</title>
-    <meta name="description" content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
+    <meta name="description"
+        content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC&amp;display=swap">
@@ -36,23 +38,60 @@
                     <div class="col-lg-5 d-none d-lg-flex"><img class="img-fluid" src="assets/img/anuncio2.gif"></div>
                     <div class="col-lg-7">
                         <div class="p-5">
-                            <div class="text-center"><img class="img-fluid" src="assets/img/logo_panaderia.png" style="width: 150PX;">
-                                <h4 class="text-dark bounce animated mb-4" style="font-family: 'Alegreya SC', serif;">Creación de nueva cuenta</h4>
+                            <div class="text-center"><img class="img-fluid" src="assets/img/logo_panaderia.png"
+                                    style="width: 150PX;">
+                                <h4 class="text-dark bounce animated mb-4" style="font-family: 'Alegreya SC', serif;">
+                                    Creación de nueva cuenta</h4>
                             </div>
-                            <form class="user">
+                            <form class="user form needs-validation" novalidate role="form" autocomplete="off"
+                                action="./index.html" id="formulario">
                                 <div class="row mb-3">
-                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="text" id="FirstName" placeholder="Nombre" name="first_name" required="" style="font-family: Acme, sans-serif;"></div>
-                                    <div class="col-sm-6"><input class="form-control form-control-user" type="text" id="exampleFirstName" placeholder="Apellido" name="last_name" required="" style="font-family: Acme, sans-serif;"></div>
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
+                                            type="text" id="FirstName" placeholder="Nombre" name="first_name"
+                                            required="" minLength="3" maxlength="20"
+                                            pattern="[A-Za-z\u00f1\u00d1]{3,20}" style="font-family: Acme, sans-serif;">
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Ingrese datos correctos</div>
+                                    </div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="text"
+                                            id="exampleFirstName" placeholder="Apellido" name="last_name" required=""
+                                            style="font-family: Acme, sans-serif;" minLength="3" maxlength="20"
+                                            pattern="[A-Za-z\u00f1\u00d1]{3,20}">
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Ingrese datos correctos</div>
+                                    </div>
                                 </div>
-                                <div class="mb-3"><input class="form-control form-control-user" type="email" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Email" name="email" required="" style="font-family: Acme, sans-serif;"></div>
+                                <div class="mb-3"><input class="form-control form-control-user" type="email"
+                                        id="InputEmail" aria-describedby="emailHelp" placeholder="Email" name="email"
+                                        required="" style="font-family: Acme, sans-serif;" minlength="5" maxlength="40"
+                                        pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
+                                    <div class="valid-feedback">Correcto</div>
+                                    <div class="invalid-feedback">Ingrese datos correctos</div>
+                                </div>
                                 <div class="row mb-3">
-                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user" type="password" id="examplePasswordInput" placeholder="Password" name="password" required="" style="font-family: Acme, sans-serif;"></div>
-                                    <div class="col-sm-6"><input class="form-control form-control-user" type="password" id="InputRepeatPassword" placeholder="Repetir Password" name="password_repeat" required="" style="font-family: Acme, sans-serif;"></div>
-                                </div><a class="btn btn-dark d-block btn-user w-100" role="button" style="font-family: Acme, sans-serif;" href="iniciosesion.html">Crear cuenta</a>
+                                    <div class="col-sm-6 mb-3 mb-sm-0"><input class="form-control form-control-user"
+                                            type="password" id="examplePasswordInput" placeholder="Password"
+                                            name="password" required="" style="font-family: Acme, sans-serif;"
+                                            minLength="5" maxlength="15" pattern="[^\s]{5,15}">
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Ingrese datos correctos</div>
+                                    </div>
+                                    <div class="col-sm-6"><input class="form-control form-control-user" type="password"
+                                            id="InputRepeatPassword" placeholder="Confirmar Password"
+                                            name="password_repeat" required="" style="font-family: Acme, sans-serif;"
+                                            minLength="5" maxlength="15" pattern="[^\s]{5,15}">
+                                        <div class="valid-feedback">Correcto</div>
+                                        <div class="invalid-feedback">Ingrese datos correctos</div>
+                                    </div>
+                                </div><button class="btn btn-dark d-block btn-user w-100" role="button" type="submit"
+                                    style="font-family: Acme, sans-serif;">Crear cuenta</button>
                                 <hr>
                             </form>
-                            <div class="text-center"><a class="small" href="recuperarclave.html" style="font-family: Acme, sans-serif;">¿Olvidaste tu clave?</a></div>
-                            <div class="text-center"><a class="small" href="iniciosesion.html" style="font-family: Acme, sans-serif;">¿Ya tienes cuenta? Inicia sesión aquí</a></div>
+                            <div class="text-center"><a class="small" href="recuperarclave.html"
+                                    style="font-family: Acme, sans-serif;">¿Olvidaste tu clave?</a></div>
+                            <div class="text-center"><a class="small" href="iniciosesion.html"
+                                    style="font-family: Acme, sans-serif;">¿Ya tienes cuenta? Inicia sesión aquí</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -66,6 +105,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
     <script src="assets/js/temalogin.js"></script>
+    <script src="assets/js/validacion.js"></script>
 </body>
 
 </html>

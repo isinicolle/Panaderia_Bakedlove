@@ -5,14 +5,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Recuperar Clave | Panadería Bakedlove</title>
-    <meta name="description" content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
+    <meta name="description"
+        content="Panadería BakedLove Proyecto de Negocios Web. Incluye la parte de cliente y administrativa. Base de datos en MySQL, el diseño elaborado con html, css, javascript y bootstrap. Se utilizo la tienda de reflow, y api rest con Node.js para el manejo de usuarios y la parte que tiene acceso el administrador.">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="icon" type="image/png" sizes="300x300" href="assets/img/logo_panaderia%20(300 × 300 px).png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Akronim&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+SC&amp;display=swap">
@@ -35,33 +37,57 @@
                 <div class="card shadow-lg o-hidden border-0 my-5">
                     <div class="card-body p-0">
                         <div class="row">
-                            <div class="col-lg-6 d-none d-lg-flex"><img class="img-fluid" src="assets/img/anuncio3.gif"></div>
+                            <div class="col-lg-6 d-none d-lg-flex"><img class="img-fluid" src="assets/img/anuncio3.gif">
+                            </div>
                             <div class="col-lg-6">
                                 <div class="p-5">
-                                    <div class="text-center"><img class="img-fluid" src="assets/img/logo_panaderia.png" style="width: 150PX;">
-                                        <h4 class="text-dark mb-2" data-bss-hover-animate="pulse" style="font-family: Acme, sans-serif;">¿Haz olvidado tu clave?</h4>
-                                        <p data-bss-hover-animate="pulse" class="mb-4">Lo entendemos, estas cosa pasan. ¡Simplemente ingrese su dirección de correo electrónico a continuación para restablecer su contraseña!</p>
+                                    <div class="text-center"><img class="img-fluid" src="assets/img/logo_panaderia.png"
+                                            style="width: 150PX;">
+                                        <h4 class="text-dark mb-2" data-bss-hover-animate="pulse"
+                                            style="font-family: Acme, sans-serif;">¿Haz olvidado tu clave?</h4>
+                                        <p data-bss-hover-animate="pulse" class="mb-4">Lo entendemos, estas cosa pasan.
+                                            ¡Simplemente ingrese su dirección de correo electrónico a continuación para
+                                            restablecer su contraseña!</p>
                                     </div>
-                                    <form class="user">
-                                        <div class="mb-3"><input class="form-control form-control-user" type="email" id="InputEmailRecovery" aria-describedby="EmailRecovery" placeholder="Escribe tu correo electronico" name="email" required="" style="font-family: Acme, sans-serif;"></div><button class="btn btn-dark d-block btn-user w-100" type="submit" style="font-family: Acme, sans-serif;" data-bs-target="#modal-1" data-bs-toggle="modal">Recuperar mi contraseña</button>
+                                    <form class="user form needs-validation" novalidate role="form" autocomplete="off"
+                                        action="./iniciosesion.html" id="formulario">
+                                        <div class="mb-3"><input class="form-control form-control-user" type="email"
+                                                id="InputEmail" aria-describedby="EmailRecovery"
+                                                placeholder="Escribe tu correo electronico" name="email" required=""
+                                                minlength="5" maxlength="40" style="font-family: Acme, sans-serif;"
+                                                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,3}$">
+                                            <div class="valid-feedback">Correcto</div>
+                                            <div class="invalid-feedback">Ingrese datos correctos</div>
+                                        </div>
+                                        <button class="btn btn-dark d-block btn-user w-100" type="submit"
+                                            style="font-family: Acme, sans-serif;" data-bs-target="#modal-1"
+                                            data-bs-toggle="modal">Recuperar mi contraseña</button>
+
                                         <div class="modal fade" role="dialog" tabindex="-1" id="modal-1">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
                                                     <div class="modal-header">
-                                                        <h4 class="modal-title">Recuperación de clave</h4><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <h4 class="modal-title">Recuperación de clave</h4><button
+                                                            type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
                                                     </div>
                                                     <div class="modal-body">
-                                                        <p>Revise su correo electrónico , se ha enviado con éxito para la recuperación de su clave.&nbsp;</p>
+                                                        <p>Revise su correo electrónico , se ha enviado con éxito para
+                                                            la recuperación de su clave.&nbsp;</p>
                                                     </div>
-                                                    <div class="modal-footer"><button class="btn btn-light" type="button" data-bs-dismiss="modal">Cerrar</button></div>
+                                                    <div class="modal-footer"><button class="btn btn-light"
+                                                            type="button" data-bs-dismiss="modal">Cerrar</button></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </form>
                                     <div class="text-center">
-                                        <hr><a class="small" href="creaciondecuenta.html" style="font-family: Acme, sans-serif;">Crear nueva cuenta</a>
+                                        <hr><a class="small" href="./creaciondecuenta.html"
+                                            style="font-family: Acme, sans-serif;">Crear nueva cuenta</a>
                                     </div>
-                                    <div class="text-center"><a class="small" href="iniciosesion.html" style="font-family: Acme, sans-serif;">Regresar al inicio de sesión</a></div>
+                                    <div class="text-center"><a class="small" href="./iniciosesion.html"
+                                            style="font-family: Acme, sans-serif;">Regresar al inicio de sesión</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -77,6 +103,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox-plus-jquery.min.js"></script>
     <script src="assets/js/Profile-Edit-Form.js"></script>
     <script src="assets/js/temalogin.js"></script>
+    <script src="assets/js/validacion.js"></script>
 </body>
 
 </html>
