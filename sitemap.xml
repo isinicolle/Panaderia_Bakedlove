@@ -36,4 +36,19 @@
     <url>
         <loc>/success.html</loc>
     </url>
+    <url>
+        <loc>/administrativo.html</loc>
+    </url>
+    <url>
+        <loc>/clientes.html</loc>
+    </url>
+    <url>
+        <loc>/login.html</loc>
+    </url>
+    <url>
+        <loc>/profile.html</loc>
+    </url>
+    <url>
+        <loc>/usuarios-administrativos.html</loc>
+    </url>
 </urlset>
